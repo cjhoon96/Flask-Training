@@ -41,7 +41,7 @@ def add_member_controller() -> 'html':
     addr = request.form['m_addr']
     tel = request.form['m_tel']
     print("from m_reg.html")    #cmd 창에 결과가 찍힘
-    return render_template("return.html")      #브라우저에 결과가 찍힘
+    return render_template("return.html" , n = name, a = addr , t = tel)      #브라우저에 결과가 찍힘
 
 
 ######################################################################################################
